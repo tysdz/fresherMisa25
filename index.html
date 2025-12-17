@@ -1,0 +1,479 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/header.css">
+    <link rel="stylesheet" href="./assets/sidebar.css">
+    <link rel="stylesheet" href="./assets/data-candidate.css">
+    <link rel="stylesheet" href="./assets/modal.css">
+    <link rel="stylesheet" href="./assets/common.css">
+    <link rel="stylesheet" href="./assets/icon.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Document</title>
+</head>
+
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+
+<body>
+
+    <div class="container display-flex flex1 flex-direction-column">
+        <div class="header display-flex justify-content-space-between align-items-center">
+
+            <!-- hederleft -->
+            <div class="header-left display-flex align-items-center">
+                <!-- title -->
+                <div class="header-title display-flex align-items-center">
+                    <div style="width: 24px; height: 24px;margin-left: 8px;"
+                        class="display-flex flex-direction-column justify-content-center align-items-center">
+                        <div class="icon icon-switch"></div>
+                        <div class="icon icon-switch"></div>
+                        <div class="icon icon-switch"></div>
+                    </div>
+                    <div class="icon-title display-flex align-items-center">
+                        <div class="icon-title-logo"></div>
+                    </div>
+                    <div class="title-name">Tuyển dụng</div>
+                </div>
+                <div class="header-search display-flex align-items-center">
+                    <div class="icon icon-search"></div>
+                    <input class="search-input" type="text"
+                        placeholder="Tìm kiếm tin tuyển dụng, ứng viên, nhân tài...">
+                </div>
+            </div>
+
+            <!-- headerRight -->
+            <div class="header-right display-flex align-items-center">
+                <!-- recruitment page -->
+                <div class="recruitment-page display-flex align-items-center">
+                    <!-- global -->
+                    <div class="icon icon-global"></div>
+                    <div class="icon-text text-align-center"> Website tuyển dụng </div>
+                </div>
+
+                <!-- notify -->
+                <div class="notification display-flex align-items-center gap-small">
+                    <div class="icon-notify"></div>
+                </div>
+
+                <!-- cart -->
+                <div class="cart display-flex align-items-center gap-small">
+                    <div class="icon-cart"></div>
+                </div>
+
+                <!-- user control -->
+                <div class="user-control-panel display-flex gap-small align-items-center">
+                    <div class="user-add userpanel-item"></div>
+                    <div class="user-message userpanel-item"></div>
+                    <div class="user-notification userpanel-item"></div>
+                    <div class="user-help userpanel-item"></div>
+                    <div class="user-more-info userpanel-item"></div>
+                    <div class="user-knowledge userpanel-item"></div>
+                    <div class="user-avatar userpanel-item"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- body wrapper -->
+        <div class="body-wrapper display-flex flex1">
+            <!-- sidebar -->
+            <div class="content flex-direction-column">
+                <div class="sidebar flex1 flex-direction-column">
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-recruiment"></div>
+                        <div class="sidebar-content">Tin tuyển dụng</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center " style="background-color:#2680eb">
+                        <div class="icon sidebar-icon icon-sb-candidate"></div>
+                        <div class="sidebar-content">Ứng viên</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-calendar"></div>
+                        <div class="sidebar-content">Lịch</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-potential"></div>
+                        <div class="sidebar-content">Kho tiềm năng</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-campaign"></div>
+                        <div class="sidebar-content">Chiến dịch tuyển dụng</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-job"></div>
+                        <div class="sidebar-content">Công việc</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-aimaketing"></div>
+                        <div class="sidebar-content">aiMaketing</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-recruiment"></div>
+                        <div class="sidebar-content">Trao đổi với ứng viên</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-report"></div>
+                        <div class="sidebar-content">Báo cáo</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="icon sidebar-icon icon-sb-setting"></div>
+                        <div class="sidebar-content">Thiết lập</div>
+                    </div>
+                    <div class="sidebar-item display-flex align-items-center">
+                        <div class="sidebar-icon icon-sb-knowledge"></div>
+                        <div class="sidebar-content">Kiến thức hữu ích</div>
+                    </div>
+                </div>
+
+                <div class="collapse-wrapper">
+                    <div class="collapse-item display-flex align-items-center">
+                        <div class="collapse-icon"></div>
+                        <div class="collapse-text">Thu gọn</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="data-candidate">
+                <!-- main content -->
+                <div class="main-content">
+                    <div class="content-header">
+                        <h1 class="page-title">Ứng viên</h1>
+                        <div class="display-flex align-items-center">
+                            <button class="btn-add-candidate">+ Thêm ứng viên</button>
+                            <div class="more-options">
+                                <div class="icon icon-more-options"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- search and filter -->
+                    <div class="content-wrapper">
+                        <div class="search-filter-section">
+                            <div class="search-box">
+                                <div class="icon-wrapper">
+                                    <div class="icon-spin"></div>
+                                    <div class="icon-blinh"></div>
+                                </div>
+                                <input type="text" id="searchInput" class="search-table-input"
+                                    placeholder="Tìm kiếm hoặc nhờ AI trợ giúp">
+                            </div>
+                            <div class="filter-actions">
+                                <button class="btn-filter"><span class="icon icon-filter"></span></button>
+                                <button class="btn-export"><span class="icon icon-export"></span></button>
+                                <button class="btn-activity"><span class="icon icon-activity"></span></button>
+                                <button class="btn-settings"><span class="icon icon-settings-table"></span></button>
+                            </div>
+                        </div>
+
+                        <!-- table -->
+                        <div class="table-wrapper">
+                            <div class="table-scroll" data-simplebar data-simplebar-auto-hide="false">
+                                <table class="candidate-table" id="candidateTable">
+                                    <thead>
+                                        <tr>
+                                            <th class="sticky"><input type="checkbox" id="selectAll"></th>
+                                            <th>Họ và tên</th>
+                                            <th>Ngày sinh</th>
+                                            <th>Giới tính</th>
+                                            <th>Số điện thoại</th>
+                                            <th>Email</th>
+                                            <th>Quận/Huyện</th>
+                                            <th>Địa chỉ</th>
+                                            <th>Trường học</th>
+                                            <th>Trình độ</th>
+                                            <th>Nơi đào tạo</th>
+                                            <th>Chuyên ngành</th>
+                                            <th>Ngày ứng tuyển</th>
+                                            <th>Nguồn ứng viên</th>
+                                            <th>Người tuyển dụng</th>
+                                            <th>Cộng tác viên</th>
+                                            <th>Công ty cũ</th>
+                                            <th>Ngày bắt đầu</th>
+                                            <th>Ngày kết thúc</th>
+                                            <th>Vị trí công việc</th>
+                                            <th>Mô tả công việc</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="candidateTableBody">
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- <div class="right-mask"></div> -->
+                        </div>
+
+
+                        <!-- pagination -->
+                        <div class="pagination-section">
+                            <div class="pagination-info">
+                                Tổng: <span id="totalRecords">0</span> bản ghi
+                            </div>
+                            <div class="pagination-controls">
+                                <span>Số bản ghi/trang</span>
+                                <select id="pageSize" class="page-size-select">
+                                    <option value="10">10</option>
+                                    <option value="20">20</option>
+                                    <option value="30">30</option>
+                                </select>
+                                <div class="page-navigation">
+                                    <span id="pageInfo">1 - 10 bản ghi</span>
+                                    <button id="prevPage" class="btn-page">‹</button>
+                                    <button id="nextPage" class="btn-page">›</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal add candidate -->
+        <div id="addCandidateModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header justify-content-space-between align-items-center">
+                    <h2>Thêm ứng viên</h2>
+                    <span class="close-modal">&times;</span>
+                </div>
+                <form id="addCandidateForm" class="main-body display-flex" data-simplebar
+                    data-simplebar-auto-hide="false">
+                    <div class="modal-body display-flex">
+                        <!-- basic information -->
+                        <div class="candidate-avatar-form">
+                            <div class="candidate-avatar-upload">
+                                <span>Ảnh</span>
+                            </div>
+                        </div>
+                        <div class=" form-wrapper">
+                            <div class="form-section">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Họ và tên <span class="required">*</span></label>
+                                        <input type="text" name="fullName" placeholder="Nhập họ và tên" class="forcus"
+                                            autofocus>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Ngày sinh</label>
+                                        <input type="date" name="dateOfBirth">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Giới tính</label>
+                                        <select name="gender">
+                                            <option value="">Chọn giới tính</option>
+                                            <option value="Male">Nam</option>
+                                            <option value="Female">Nữ</option>
+                                            <option value="Other">Khác</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Khu vực</label>
+                                        <input type="text" name="district" placeholder="Chọn khu vực">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Số điện thoại <span class="required">*</span></label>
+                                        <input type="tel" name="phoneNumber" placeholder="Nhập số điện thoại">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="Nhập Email">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Địa chỉ</label>
+                                        <input type="text" name="address" placeholder="Nhập địa chỉ">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- education -->
+                            <div class="form-section">
+                                <h3 class="section-title">HỌC VẤN</h3>
+
+                                <div class="form-row">
+                                    <div class="form-group-education">
+                                        <div class="display-flex align-items-center">
+                                            <div class="icon icon-dot"></div>
+                                            <label>Trình độ đào tạo</label>
+                                        </div>
+                                        <input type="text" name="educationLevel" placeholder="Nhập trình độ đào tạo">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group-education">
+                                        <div class="display-flex align-items-center">
+                                            <div class="icon icon-dot"></div>
+                                            <label class="align-items-center">Nơi đào tạo</label>
+                                        </div>
+                                        <input type="text" name="trainingPlace" placeholder="Nhập nơi đào tạo">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group-education">
+                                        <div class="display-flex align-items-center">
+                                            <div class="icon icon-dot"></div>
+                                            <label>Chuyên ngành</label>
+                                        </div>
+                                        <input type="text" name="major" placeholder="Nhập chuyên ngành">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- application information -->
+                            <div class="form-section">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Ngày ứng tuyển <span class="required">*</span></label>
+                                        <input type="date" name="appliedDate" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Nguồn ứng viên</label>
+                                        <select name="source">
+                                            <option value="">Chọn nguồn ứng viên</option>
+                                            <option value="Facebook">Facebook</option>
+                                            <option value="LinkedIn">LinkedIn</option>
+                                            <option value="Website">Website</option>
+                                            <option value="Reference">Giới thiệu</option>
+                                            <option value="Other">Khác</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Nhân sự khai thác</label>
+                                        <input type="text" name="recruiter" placeholder="Chọn nhân sự khai thác">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Công tác viên</label>
+                                        <input type="text" name="collaborator" placeholder="Chọn công tác viên">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- work experience -->
+                            <div class="form-section">
+                                <h3 class="section-title">KINH NGHIỆM LÀM VIỆC</h3>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Nơi làm việc</label>
+                                        <input type="text" name="lastCompany" placeholder="Nhập nơi làm việc">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Thời gian</label>
+                                        <div class="date-range">
+                                            <input type="date" name="startDate" placeholder="MM/yyyy">
+                                            <span>-</span>
+                                            <input type="date" name="endDate" placeholder="MM/yyyy">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Vị trí công việc</label>
+                                        <input type="text" name="jobTitle" placeholder="Nhập vị trí công việc">
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label>Mô tả công việc</label>
+                                        <textarea name="jobDescription" placeholder="Nhập mô tả công việc"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-cancel">Hủy</button>
+                        <button type="submit" class="btn-save">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="misa-support flex-direction-column">
+            <div class="misa-support-toggle" id="toggle-btn">
+                <div class="icon-toggle-support"></div>
+            </div>
+            <div class="misa-support-item display-flex flex-direction-column" id="toggle-box">
+                <div class="support1"></div>
+                <div class="support2"></div>
+                <div class="support3"></div>
+                <div class="icon-v2 support4"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- toastify js -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+<!-- load module main -->
+<script type="module" src="./js/candidate-manager.js"></script>
+<script src="./test-debugger.js"> </script>
+<script>
+    // sidebar collapse
+    document.addEventListener('DOMContentLoaded', () => {
+        const collapseBtn = document.querySelector('.collapse-item');
+        const sidebar = document.querySelector('.content');
+
+        if (collapseBtn && sidebar) {
+            const savedState = localStorage.getItem('sidebarCollapsed');
+            if (savedState === 'true') {
+                sidebar.classList.add('collapsed');
+            }
+
+            collapseBtn.addEventListener('click', () => {
+                sidebar.classList.toggle('collapsed');
+
+                const isCollapsed = sidebar.classList.contains('collapsed');
+                localStorage.setItem('sidebarCollapsed', isCollapsed);
+            });
+        }
+    });
+</script>
+
+<script>
+    //toogle support
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById("toggle-btn");
+        const box = document.getElementById("toggle-box");
+
+        if (btn && box) {
+            btn.addEventListener("click", function () {
+                box.classList.toggle("active");
+            });
+        }
+    });
+</script>
+
+</html>

@@ -1,0 +1,189 @@
+.display-flex {
+    display: flex;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* =======================================================
+   DISPLAY (Chế độ hiển thị)
+   ======================================================= */
+.display-flex {
+    display: flex;
+}
+
+.display-inline-flex {
+    display: inline-flex;
+}
+
+/* =======================================================
+   FLEX DIRECTION (Hướng sắp xếp)
+   ======================================================= */
+.flex-direction-row {
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse {
+    flex-direction: column-reverse;
+}
+
+/* =======================================================
+   FLEX WRAP (Xuống dòng)
+   ======================================================= */
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-wrap-nowrap {
+    flex-wrap: nowrap;
+}
+
+/* =======================================================
+   JUSTIFY CONTENT (Căn chỉnh trục chính - Ngang)
+   ======================================================= */
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
+
+.justify-content-space-evenly {
+    justify-content: space-evenly;
+}
+
+/* =======================================================
+   ALIGN ITEMS (Căn chỉnh trục chéo - Dọc)
+   ======================================================= */
+.align-items-start {
+    align-items: flex-start;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+/* =======================================================
+   FLEX ITEMS (Các phần tử con)
+   ======================================================= */
+/* Tự động chiếm hết khoảng trống còn lại */
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+/* Giữ nguyên kích thước, không bị co lại */
+.flex-shrink-0 {
+    flex-shrink: 0;
+}
+
+/* Class viết tắt phổ biến (như file cũ của bạn) */
+.flex1 {
+    flex: 1;
+}
+
+/* Căn chỉnh riêng lẻ từng phần tử con */
+.align-self-center {
+    align-self: center;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+/* =======================================================
+   GAP (Khoảng cách giữa các phần tử)
+   ======================================================= */
+.gap-small {
+    gap: 8px;
+}
+
+.gap-medium {
+    gap: 16px;
+}
+
+.gap-large {
+    gap: 24px;
+}
+
+.gap-extra-large {
+    gap: 32px;
+}
+
+/* =======================================================
+   TEXT ALIGNMENT (Căn chỉnh văn bản)
+   ======================================================= */
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+/* =======================================================
+   STICKY POSITIONING (Định vị cố định)
+   ======================================================= */
+.sticky {
+  position: sticky;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+}

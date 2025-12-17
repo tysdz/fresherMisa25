@@ -1,0 +1,153 @@
+.container{
+    width: auto;
+    height: 100vh;
+}
+
+/* container */
+
+.body-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+     background-color: rgb(1, 33, 44);
+    overflow: hidden;
+}
+
+.container .content {
+    position: relative;
+    width: 240px;
+    min-width: 240px;
+    max-width: 240px;
+    padding-bottom: 16px;
+    padding-top: 32px;
+    height: 100%;
+background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('https://amisplatform.misacdn.net/apps/recruit/event-sidebar.86fc6daf7938e471.svg');    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container .content.collapsed{
+    width: 80px;
+    min-width: 80px;
+    max-width: 80px;
+}
+
+.sidebar{
+    height: calc(100% - 56px);
+}
+
+.sidebar-item{
+    height: 40px;
+    width: 90%;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 4px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+}
+
+.content.collapsed .sidebar-item{
+    margin-left: 8px;
+    padding: 0 8px;
+    justify-content: center;
+}
+
+.sidebar-item:hover{
+    background-color: rgba(255, 255, 255, 0.08);
+    width: 90%;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.sidebar-item.active{
+    background-color: #1e88e5;
+}
+
+.sidebar-icon{
+    flex-shrink: 0;
+}
+
+.sidebar-content{
+    color: #d3d3d3;
+    margin-left: 12px;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.content.collapsed .sidebar-content{
+    opacity: 0;
+    width: 0;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+.sidebar-item.active .sidebar-content{
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.collapse-wrapper{
+    padding: 0 8px 12px 8px;
+}
+
+.content.collapsed .collapse-wrapper{
+    padding: 0 4px 12px 4px;
+}
+
+.collapse-item{
+    height: 32px;
+    padding: 0 8px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    gap: 8px;
+    border: 1px solid   #c7c4c4;
+}
+
+.content.collapsed .collapse-item{
+    padding: 0;
+    justify-content: center;
+}
+
+.collapse-item:hover{
+    background-color: rgba(34, 31, 31, 0.15);
+}
+
+.collapse-icon{
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23d3d3d3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.content.collapsed .collapse-icon{
+    transform: rotate(180deg);
+}
+
+.collapse-text{
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.content.collapsed .collapse-text{
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
